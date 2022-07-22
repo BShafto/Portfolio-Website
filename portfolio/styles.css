@@ -1,0 +1,424 @@
+/*  COLOURS
+#E8BA15 Light Gold
+#BF9500 Gold
+#FFD230 Yellow
+#010742 Dark Blue
+#2337EB Blue
+*/
+
+body{
+    background-color: #010742;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2em;
+
+    display: grid;
+    grid-template-areas: 
+        "header       header header header                header"
+        "Lintro       Lintro     Lintro   Rintro          Rintro"
+        "mission       mission    mission     mission      mission"
+        "education       education education education       education"
+        "edA       edA  edB edB                        edB"
+        "experience       experience experience experience    experience"
+        "expA       expA expB expC                      expC"
+        "lSocials       contact contact contact             rEmail";
+    grid-template-columns: 0.1fr 1fr 1fr 1fr 0.1fr;
+    gap: 20px;
+}
+
+/*------------------------ Events -----------------------------------*/
+
+.edA:hover, .edB1:hover, .edB2:hover, .expA:hover, .expB:hover, .expC:hover{
+    background-color: #000000;
+    transition: background-color 1s ease;
+}
+
+input:hover{
+    color: #E8BA15;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+input[type=text], select textarea{
+    border: 1px solid #ccc;
+}
+
+
+/*------------------------ Properties -------------------------------*/
+
+header, .Lintro, .Rintro, .mission, .education, .edA, .edB, .experience, .expA, .expB, 
+.expC, .contact, .lSocials, .rEmail{
+    padding: 1.2em;
+    margin: 0px 75px;
+}
+
+h2, h3, h4, h5, p{
+    text-align: center;
+}
+
+.expA, .expB, .expC, .edA, .edB{
+    border: 1px solid #2337EB;
+    border-radius: 25px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: #E8BA15;
+}
+
+.resume{
+    border: 2px solid #E8BA15;
+    padding: 2px 10px;
+    border-radius: 10%;
+}
+
+h1{
+    font-size: 50px;
+    color: #E8BA15;
+    margin: 5px;
+}
+
+h2{
+    font-size: 30px;
+    color: #BF9500;
+}
+
+h3{
+    color:#FFD230;
+}
+
+h4{
+    color:#FFD230;
+    /*opacity: 0.6;*/
+    font-style: italic;
+}
+
+header{
+    grid-area: header;
+    display: inline-flex;
+}
+
+header ul{
+    display: flex;
+    position: absolute;
+    right: 180px;
+    list-style: none;
+}
+
+header ul li{
+    margin: 15px;
+}
+
+.Lintro{
+    grid-area: Lintro;
+    margin-right: 0px;
+}
+
+.Lintro p{
+    text-align: left;
+}
+
+.role{
+    opacity: 0.5;
+}
+
+.Rintro{
+    padding: 10%;
+    grid-area: Rintro;
+    margin-left: 0px;
+}
+
+.me{
+    border-radius: 50%;
+}
+
+.mission{
+    grid-area: mission;        
+
+}
+
+.education{
+    grid-area: education;            
+}
+
+.edA{
+    grid-area: edA;
+    margin-left: 75px;
+}
+
+.edB{
+    grid-area: edB;
+    margin-right: 75px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 20px;
+}
+
+.edB h3, .edB h4{
+    grid-column: span 2;
+}
+
+.edB1{
+    grid-column: 1;
+    line-height: 2em;
+    border: 1px solid #2337EB;
+    border-radius: 25px;
+
+}
+
+.edB2, .edA ul{
+    line-height: 4em;
+}
+
+.edB2{
+    grid-column: 2;
+    border: 1px solid #2337EB;
+    border-radius: 25px;
+}
+
+.edB2 h4{
+    line-height: 3em;       /*Align the height of the two edB bullet points.*/
+}
+
+.edB1 h4, .edB2 h4{
+    text-align: left;
+}
+
+.edB ul li{
+    margin-left: 20px;
+}
+
+.experience{
+    grid-area: experience;
+}
+
+.expA{
+    grid-area: expA;
+    margin-left: 75px;
+}
+
+.expB{
+    grid-area: expB;
+}
+
+.expC{
+    grid-area: expC;
+    margin-right: 75px;
+}
+
+.contact{
+    grid-area: contact;  
+    height: 200px;
+    margin-top: 0px;
+}
+
+.contact h2{
+    margin-top: 0px;
+}
+
+form{
+    text-align: center;
+    border: 1px solid #2337EB;
+    border-radius: 25px;
+    margin: 0% 15% 0% 15%;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.submit{
+    border: 2px solid #E8BA15;
+    padding: 2px 10px;
+    border-radius: 10%;
+    background-color: #010742;
+    color: white;
+}
+
+.lSocials, .rEmail{
+    display: block;
+    list-style: none;
+}
+
+.lSocials{
+    grid-area: lSocials;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 1.2em 0em 0em 0em;
+}
+
+.lSocials::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 50%;
+    margin: 0px auto;
+    background-color: white;
+}
+
+/*.rEmail{
+    grid-area: rEmail;
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: flex-start;
+}
+
+.rEmail li{
+    position: sticky;
+    bottom: 0%;
+    align-self: flex-end;
+    letter-spacing: 0.23em;
+}*/
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #FFD230;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #BF9500;
+  }
+
+  /*------------------------ Animations -----------------------------------*/
+
+  @keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+  }
+
+  /*@keyframes slideIn{
+    100% {transform: translateY(0%)}
+  }*/
+
+
+
+/*------------------------ Scalable -----------------------------------*/
+
+@media only screen and (max-width: 480px){
+    .Rintro, .dates{
+        display: none;
+    }
+
+    header, .Lintro, .Rintro, .mission, .education, .edA, .edB, .experience, .expA, .expB, 
+    .expC, .contact{
+        padding: 0em;       /*1.2em*/
+        margin: 0px 0px;    /*0px 75px*/
+    }
+
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.35fr 0.15fr    /*mission*/
+                            0.1fr 0.1fr 0.1fr      /*edB*/
+                            0.1fr 0.35fr 0.35fr    /*expB*/
+                            0.35fr 0.2fr 0.1fr;    /*lSocials*/
+        gap: 10px;
+        grid-template-areas: 
+            "header"       
+            "Lintro"
+            "mission"
+
+            "education"
+            "edA"
+            "edB"
+
+            "experience"
+            "expA"
+            "expB"  
+
+            "expC"
+            "contact"
+            "lSocials";
+    }
+
+    header ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    header{
+        display: inline-flex;
+    }
+
+    .edA, .expA{
+        margin-left: 0px;
+    }
+
+    .edB, .expC{
+        margin-right: 0px;
+    }
+
+    .edB{
+        grid-area: edB;
+        margin-right: 0px;
+        display: block;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        text-align: left;
+        gap: 10px;
+    }
+    
+    .edB h3{
+        grid-column: span 2;
+    }
+    
+    .edB1{
+        grid-row: 1;
+        grid-column: span 2;
+        line-height: 2em;
+        border: 1px solid #2337EB;
+        border-radius: 25px;
+    
+    }
+    
+    .edB2{
+        grid-row: 2;
+        grid-column: span 2;
+        line-height: 4em;
+        border: 1px solid #2337EB;
+        border-radius: 25px;
+    }
+
+    .unHide{
+        display: none;
+    }
+
+    .edB2, .edA ul{
+        line-height: 2em;
+    }
+
+
+    /*------------------------ Scalable Events -----------------------------------*/
+
+    .edA:hover h3 + .unHide{
+        display: block;
+        animation: fadeIn 2s;
+    }  
+
+    /*.edB:hover h3 + .unHide{        
+        display: block;
+        animation: fadeIn 2s;
+    }*/
+
+}
