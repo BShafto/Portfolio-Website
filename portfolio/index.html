@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="indexHTML">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="C:\Users\Ben\Documents\portfolio\styles.css" type="text/css" rel="stylesheet">
+        <link href="styles.css" type="text/css" rel="stylesheet">
+        <!-- <link href="style.css" type="text/css" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&family=Titillium+Web:wght@200&display=swap" rel="stylesheet">        
@@ -13,23 +14,23 @@
     </head>
     <body>
         <header id="home">
+            <a class="Lheader" href="https://www.benshafto.com" tabindex="1">Coming Soon...</a>
             <ul>
-                <li><a href="#home" tabindex="1">Home</a></li>
-                <li><a href="#about" tabindex="2">About</a></li>
-                <li><a href="#portfolio" tabindex="3">Portfolio</li>
+                <li><a href="#home" tabindex="2">Home</a></li>
+                <li><a href="https://www.benshafto.com/portfolio.html" tabindex="3">Portfolio</a></li>
                 <li><a href="#contact" tabindex="4">Contact Me</a></li>
-                <li><a href="C:\Users\Ben\Documents\portfolio\cv.pdf" target="_blank" class="resume" tabindex="5">Resume</a></li>
+                <li><a href="cv.pdf" target="_blank" class="resume" tabindex="5">Resume</a></li>
             </ul>            
         </header>
 
         <div class="Lintro">
             <p><strong>Hello! I'm</strong></p>
             <h1>Ben Shafto</h1>
-            <h1 class="role">Front-End Developer</h1>
-            <p>Seeking work as a Junior Front-End Developer based in the U.K</p>
+            <h1 class="shaded">Front-End Developer</h1>
+            <p>Seeking work as a Java and Front-End Developer based in Reading, U.K</p>
         </div>
         <div class="Rintro">
-            <img src="C:\Users\Ben\Documents\portfolio\me.jpg" class="me">
+            <img src="me.jpg" class="me">
         </div>
 
         <div class="mission" id="about">
@@ -42,39 +43,58 @@
 
         <div class="edA">
             <h3>CodeCadamy Courses</h3>
-            <div class="unHide">
-                <h4>May 2022 - Present</h4>
-                <ul class="edB0">
-                    <li>HTML, CSS, JavaScript & PHP</li>
-                    <li>Transitions & Animations</li>
-                    <li>React</li>
-                    <li>Web Apps</li>
-                    <li>Github</li>
-                    <li>Complex Data Structures</li>
-                    <li>Web Design</li>
-                    <li>Algorithms & Testing</li>
-                </ul>
-            </div>
+            <h4 class="shaded">May 2022 - Present</h4>
+            <ul>
+                <li>HTML, CSS, JavaScript & PHP</li>
+                <li>Transitions & Animations</li>
+                <li>React</li>
+                <li>Web Apps</li>
+                <li>Github</li>
+                <li>Complex Data Structures</li>
+                <li>Web Design</li>
+                <li>Algorithms & Testing</li>
+            </ul>
         </div>
 
         <div class="edB">
-            <h3>University of Plymouth, U.K.</h3>
-            <h4 class="dates">September 2015 - September 2018</h4>
-            <ul class="edB1">
+            <div class="edTitle">
+                <h3>University of Plymouth, U.K.</h3>
+                <h4 class="shaded">September 2015 - September 2018</h4>
+            </div>
+            <div class="edB1description">
                 <h4>Dissertation - Stock Exchange Themed Bar System</h4>
-                <li>My unique algorithm calculated and updated the drink prices every 5 minutes based on quantities sold to maximise consumer interest whilst increasing the bar's profits</li><br>
-                <li>Developed and tested in a Netbeans IDE with Java, HTML, CSS, PHP and SQL</li>
-            </ul>
-            <ul class="edB2">
+                <ul>
+                    <li>My unique algorithm calculated and updated the drink prices every 5 minutes based on quantities sold to maximise consumer interest whilst increasing the bar's profits</li><br>
+                    <li>Developed and tested in a Netbeans IDE with Java, HTML, CSS, PHP and SQL</li>
+                </ul>
+            </div>
+            <div class="main-diss-banner" id="main-diss-banner">
+                <svg xmlns="http://www.w3.org/2000/svg" class="bannerBtn btnPrevious" id="btnPrevious" viewBox="0 0 36 36" stroke="#FFD230" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <!--viewBox (minX, minY, width, height)-->
+                    <title>Previous</title>
+                    <path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm3 5.753l-6.44 5.247 6.44 5.263-.678.737-7.322-6 7.335-6 .665.753z"/>
+                </svg>
+                <div class="bannerImg" id="dissBanner3"></div>
+                <div class="bannerImg" id="dissBanner2"></div>
+                <div class="bannerImg" id="dissBanner1"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="bannerBtn btnNext" id="btnNext" viewBox="0 0 36 36" stroke="#FFD230" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <title>Next</title>
+                    <path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/>
+                </svg>
+            </div>
+             
+            <div class="edB2">
                 <h4>Topics</h4>
-                <li>Data Analysis</li>
-                <li>Software Design</li>
-                <li>App Development</li>
-                <li>Scrum Methodology</li>
-                <li>Troubleshooting & Testing</li>
-                <li>Object-Oriented Programming</li>
-                <li>Front-end Development</li>
-            </ul>
+                <ul>
+                    <li>Data Analysis</li>
+                    <li>Software Design</li>
+                    <li>App Development</li>
+                    <li>Scrum Methodology</li>
+                    <li>Troubleshooting & Testing</li>
+                    <li>Object-Oriented Programming</li>
+                    <li>Front-end Development</li>
+                </ul>
+            </div>
         </div>
 
         <div class="experience" tabindex="7">
@@ -82,19 +102,21 @@
         </div>
 
         <div class="expA">
-            <h3>Inghams</h3>
-            <h4>October 2021 - May 2022</h4>
+            <h3>Software Engineer - Wiley Edge</h3>
+            <h4 class="shaded">October 2022 - Current</h4>
             <ul>
-                <li>Reviewed many different government websites daily during the covid pandemic to best advise guests on entry requirements, restrictions and necessary paperwork to minimise issues with their bookings and maximise customer satisfaction</li>
-                <li>Provided exemplary customer service as a travel agent to new and existing clients, which helped build lasting relationships and secure new travel assignments</li>
-                <li>Responded to clients' questions, issues, and complaints and found appropriate solutions when needed</li>
-                <li>Provided customers with best deals and well-researched travel options, successfully negotiating rates while improving customer satisfaction ratings</li>
+                <em>
+                    <li>"Alumni Program provides high calibre Technology and Business focused graduates globally.</li>
+                    <li>Alumni have been selected for and trained to have an aptitude for learning quickly and problem solving in a highly technical environment.</li>
+                    <li>Additional training focuses on relevant technologies, typical financial systems and core business knowledge.</li>
+                    <li>Following training they are available to undertake technical project work for mthree clients which include many global Investment, Retail and Commercial Banks around the world."</li>
+                </em>
             </ul>
         </div>
 
         <div class="expB">
             <h3>Travel Period</h3>
-            <h4>January 2020 - September 2021</h4>
+            <h4 class="shaded">January 2020 - September 2021</h4>
             <ul>
                 <li>For the last 2 years I took time away from my career as a software developer to travel and see more of the world to work on my personal development</li>
                 <li>Once the pandemic arose I qualified as a ski and snowboard instructor and taught for the 2 winter seasons in New Zealand</li>
@@ -103,7 +125,7 @@
         
         <div class="expC">
             <h3>Ancoris</h3>
-            <h4>October 2019 - January 2020</h4>
+            <h4 class="shaded">October 2019 - January 2020</h4>
             <ul>
                 <li>Assisted customers in identifying issues and explained solutions to restore service and functionality using a variety of Google products from mapping data to data analytics</li>
                 <li>Assisted customers in identifying issues and explained solutions to restore service and functionality using a variety of Google products from mapping data to data analytics</li>
@@ -115,12 +137,6 @@
         <div class="contact" tabindex="8">
             <h2 id="contact">Contact Information</h2>
             <p>I am available to work on your projects and collaborate, contact me on the information below.</p>
-            <!--form>
-                <input type="text" class="fName" name="Full name" placeholder="Full Name"><br><br>
-                <input type="text" class="email" name="Email Address" placeholder="Email"><br><br>
-                <input type="submit" class="submit" value="Submit">
-            </form-->
-            <!--github.com/BShafto-->
             <p>me@benshafto.com</p>
             <p>+44 7598 241208</p>
         </div>
@@ -151,13 +167,24 @@
                 </a>
             </li>
         </ul>
-
-        <!--ul class="rEmail" tabindex="10">
-            <li>me@benshafto.com</li>
-        </ul-->
+        <script src="script.js"></script>
     </body>
 </html>
 
+<!--
+    C:\Users\Ben\Documents\Git-Portfolio\portfolio\index.html
+
+    C:\Users\Ben\Documents\Git-Portfolio\portfolio\instructing.html
+    
+    C:\Users\Ben\Documents\Git-Portfolio\portfolio\snow.html
+
+     C:\Users\Ben\Documents\Git-Portfolio\portfolio\portfolio.html
+-->
 
 
-
+<!--form>
+    <input type="text" class="fName" name="Full name" placeholder="Full Name"><br><br>
+    <input type="text" class="email" name="Email Address" placeholder="Email"><br><br>
+    <input type="submit" class="submit" value="Submit">
+</form-->
+<!--github.com/BShafto-->
