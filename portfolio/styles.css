@@ -39,7 +39,6 @@ body{
 /*------------------------ Events -----------------------------------*/
 
 .edA:hover, .edB:hover, .expA:hover, .expB:hover, .expC:hover{
-.edA:hover, .edB:hover, .expA:hover, .expB:hover, .expC:hover{
     background-color: #000000;
     transition: background-color 1s ease;
 }
@@ -321,12 +320,8 @@ header{
 .edTitle{
     grid-column: 1 / span 2;
     grid-row: 1;
-.edTitle{
-    grid-column: 1 / span 2;
-    grid-row: 1;
 }
 
-.edB1description{
 .edB1description{
     grid-column: 1;
     grid-row: 2;
@@ -384,13 +379,8 @@ header{
 }
 
 .btnPrevious{
-    left: 5px;    
-.btnPrevious{
-    left: 5px;    
+    left: 5px;   
 }
-
-.bannerBtn:hover{
-    opacity: 1;
 .bannerBtn:hover{
     opacity: 1;
 }
@@ -411,19 +401,12 @@ header{
 .edA ul, .edB1, .edB2{
     line-height: unset;
     padding-right: 5px;
-.edA ul, .edB1, .edB2{
-    line-height: unset;
-    padding-right: 5px;
 }
 
 .edB2 ul, .edA ul{
     column-count: 2;
     margin: 0px;
-.edB2 ul, .edA ul{
-    column-count: 2;
-    margin: 0px;
 }
-
 
 
 .edB ul li{
